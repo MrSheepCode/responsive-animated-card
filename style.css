@@ -1,0 +1,77 @@
+body {
+  background-image: url(https://images.wallpaperscraft.com/image/single/sea_horizon_minimalism_127411_3840x2400.jpg);
+}
+
+
+/* Card  */
+.card {
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  border-radius: 10%;
+  background-color: #ffffffe5;
+  margin-top: 5%;
+  margin-left: 45%;
+  box-shadow: 0 20px 10px 10px rgba(0, 255, 255, 0.722);
+  transition: 2s;
+  width: min-content;
+}
+
+/* Card Effect when your mouse hovers on it */
+.card:hover {
+  box-shadow: 0rem 0rem 10rem 10rem rgba(7, 190, 4, 0.2);
+
+}
+
+/* Text in containe rpadding */
+.container {
+  padding: 20px 20px;
+}
+
+/* H tag */
+.tag_h {
+  font-size: 2rem;
+  font-family: monospace;
+  font-weight: 100;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #00acfcee;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: fit-content;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 1.5rem;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
